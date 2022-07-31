@@ -1,0 +1,476 @@
+*{
+   padding: 0%;
+   margin: 0%;
+   box-sizing: border-box;
+}
+/*Estido header*/
+header{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color:whitesmoke;
+   border: 2px solid rgb(235, 159, 159);
+}
+   
+   
+/*NAV FLEX*/
+
+.nav_flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.portada{
+   height: 150px;
+   width: 150px;
+}
+
+.lista_nav{
+   display: inline-block;
+   list-style: none;
+   text-decoration: none;
+   margin: 0rem 1.0rem ;
+   }
+
+
+/*Comienzo grid index*/
+.grid_article{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 80% 80% 80%;
+   grid-template-areas: "a1"
+                        "a2"
+                        "a3";
+}
+
+.subtitulo{
+   color:rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   text-align: center;
+   padding-bottom: 25px;
+   padding-top: 20px;
+   grid-area: a1;
+   
+}
+
+.img_novedades{
+   width: 500px;
+   height: auto;
+   margin: auto;
+   grid-area: a2;
+   text-align: center;
+}
+
+.texto_1{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: inline-block;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   margin: 50px;
+   grid-area: a3;
+   
+}
+
+/*Media queries*/
+
+@media only screen and (max-width:600px){
+   
+
+   .img_novedades{
+      text-align: center;
+      width: 90%;
+   }
+
+   .texto_1{
+      text-align: center;
+      font-size: smaller;
+
+   }
+
+}
+
+  
+
+/*estilo footer*/
+.foot_flex{
+   display: flex;
+   background-color:whitesmoke;
+   border: 2px solid rgb(235, 159, 159);
+   justify-content: space-around;
+}
+
+.lista_foot{
+   display: inline-block;
+   list-style: none;
+   text-decoration: none;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   padding: 5px 15px 5px 15px;
+}
+
+
+
+/*estilo fondo*/
+main{
+  background-color: #FFC18E;
+}
+
+/*estilo seccion biografias*/
+/*comienzo estructura grid*/
+.grid_bio{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 0.5fr 0.5fr;
+   grid-template-areas: "a1 a1"
+                        "a2 a3";
+
+}
+                        
+.grid_titulo{
+   grid-area: a1;
+   
+}  
+
+.grid_erlend{
+   grid-area: a2;
+}
+
+.grid_eirik{
+   grid-area: a3;
+}
+
+/*fin estructura grid*/
+
+.titulo_bio{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   padding-top: 15px;
+
+}  
+
+.subtitulo_erlend{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   text-align: center;
+   padding-top: 15px;
+}
+
+.img_erlend{
+   width: 300px;
+   height: auto;
+   margin: auto;
+   display: block;
+   padding-top: 50px;
+  
+}
+
+.bio_1{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: inline-block;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   margin: 50px;
+}
+   
+
+.subtitulo_eirik{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   text-align: center;
+   padding-top: 15px;
+
+}
+
+.img_eirik{
+   width: 300px;
+   height: auto;
+   margin: auto;
+   display: block;
+   padding-top: 50px;
+  
+
+}
+
+.bio_2{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: inline-block;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 15px;
+   margin: 50px;
+}
+
+@media only screen and (max-width:600px){
+   .grid_bio{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5% 30% 30%;
+      grid-template-areas: "a1"
+                           "a2"
+                           "a3";
+   }
+   
+   .grid_titulo{
+      grid-area: a1;
+      
+   } 
+   .grid_erlend{
+      grid-area: a2;
+
+   }  
+
+    .grid_eirik{
+      grid-area: a3;
+      padding-top: 200px;
+
+   }
+}
+
+
+
+/*estilo secciòn fechas*/
+/*grid*/
+.grid_fechas{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.5fr;
+   grid-template-areas: "a1"
+                        "a2";
+}
+
+.titulo_fechas{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   text-align: center;
+   padding-top: 15px;
+   grid-area: a1;
+}
+
+.subtitulo_fechas{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   text-align: center;
+   padding-top: 15px;
+   grid-area: a1;
+}
+
+.fechas{
+   padding-top: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   padding-bottom: 30px;
+   grid-area: a2;
+}  
+
+/*estilo discografia*/
+/*grid discografia*/
+
+.discografia_grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 0.5fr 0.5fr 0.5fr;
+   grid-template-areas: "a1 a1 a1"
+                        "a2 a2 a2"
+                        "a3 a3 a3";
+   justify-items: center;
+}
+
+.titulo_grid{
+   grid-area: a1;
+}
+
+.tabla_grid{
+   grid-area: a2;
+}
+
+.iframe_grid{
+   grid-area: a3;
+}
+/*fin grid disografia*/
+
+@media only screen and (max-width:600px){
+      .discografia_grid{
+         display: grid;
+         grid-template-columns: 30% 30% 30%;
+         grid-template-rows: 30% 30% 30%;
+         grid-template-areas: "a1 a1 a1"
+                              "a2 a2 a2"
+                              "a3 a3 a3";
+         justify-items: left;
+      }
+         
+      .titulo_grid{
+         grid-area: a1;
+         }
+         
+      .tabla_grid{
+         grid-area: a2;
+         font-size: smaller;
+         display: none;
+      }
+   
+      .iframe_grid{
+         grid-area: a1;
+         padding-right: 100px;
+         padding-top: 100px;
+      }
+}
+   
+table{
+   width: 500px ;
+   height: auto;
+   padding-left: 50px;
+   align-items:initial;
+   padding-bottom: 20px;
+   padding-top: 20px; 
+}
+
+
+
+.temas{
+   display: inline-block;
+   align-items: center;
+
+}
+.titulo_disco{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   padding-top: 15px;
+}
+
+.img_disco{
+   width: 75px;
+   height: auto;
+
+}
+.cabecera_salida{
+  display: inline-block;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 50px;
+}
+.temas{
+   width: 500px;
+   text-align:center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display:inline-block;
+   margin: auto;
+   padding-right: 15px;
+
+}  
+
+.reproductor{
+   width: 500px;
+   min-height: auto;
+   padding-left: 50px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   border-radius: 10px;
+   display: inline-block;
+   align-items: center;
+   
+}
+/* estilo a links*/
+footer a{
+   text-decoration: none;
+}
+
+nav a{
+   margin-top: 1.5rem;
+   border-radius: 5rem;
+   padding: 0.5rem 1.5rem;
+   text-decoration: none;
+   color: rgb(235, 159, 159)
+}
+   
+div a{
+   text-decoration: none;
+   color:rgb(255, 119, 0)
+}
+
+/*Estilo seccion contacto*/
+/*grid contacto*/
+.grid_contact{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 30%;
+   grid-template-areas: "a1"
+                        "a2";
+   padding-bottom: 150px;
+}
+
+.titulo_contacto{
+   color: rgb(255, 119, 0);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+   text-align: center;
+   padding-top: 15px;
+   grid-area: a1;
+}
+
+form{
+   width: 350px;
+   min-height: 100px;
+   margin: auto;
+   margin-top: 50px;
+   padding-left: 50px;
+   border-radius: 2em;
+   background-color: rgb(223, 117, 52);
+   grid-area: a2;
+   
+}
+
+.nombre{
+   width: auto;
+   display: inline-block;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-top: 10px;
+}
+
+.apellido{
+   width: auto;
+   display: inline-block;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-top: 10px;
+}
+
+.query{
+   width: auto;
+   display: inline-block;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-top: 10px;
+}
+
+.newsletter{
+   width: auto;
+   display: inline-block;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-top: 10px;
+}
+.coment{
+   width: 150px;
+   display:block;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-top: 10px;
+}
+
+@media only screen and (max-width:600px){
+   form{
+      width: 280px;
+      min-height: 100px;
+      margin: auto;
+      margin-top: 40px;
+      padding-left: 20px;
+      grid-area: a2;
+      font-size: small;
+   }
+
+}
